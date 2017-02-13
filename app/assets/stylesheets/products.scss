@@ -1,0 +1,110 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.bigrow {
+display: flex;
+flex-direction: column;
+}
+
+.proddetails {
+  display: flex;
+}
+
+.prodrow {
+  background: #cdd7de;
+  border: 1px solid #8F7BA9;
+  border-radius: 5px;
+  padding: 10px;
+  /* z-index: -100; */
+  margin: 5px;
+  display: flex;
+  float: left;
+  flex-direction: row;
+  width: 70%;
+}
+
+.prodname {
+position: relative;
+display:inline-block;
+float: left;
+padding: 10px;
+width: 15%;
+
+}
+
+.prodimg {
+position: relative;
+display:inline-block;
+float: left;
+border-radius: 10px;
+overflow: hidden;
+border: solid 1px #E6E8FA;
+
+
+}
+
+.proddesc {
+position: relative;
+display:inline-block;
+float: left;
+padding: 10px;
+width: 60%;
+border: solid 1px #E6E8FA;
+border-radius: 8px;
+}
+
+.prodprice {
+position: relative;
+display:inline-block;
+float: left;
+padding: 10px;
+width: 10%;
+}
+
+.prodcontrol {
+position:relative;
+display:inline-block;
+float: left;
+padding: 10px;
+border: 0px solid;
+}
+
+.prodnew {
+position: relative;
+float: left;
+padding: 10px;
+}
+
+.newhtml {
+  background: #cdd7de;
+  border: 1px solid #8F7BA9;
+  border-radius: 5px;
+  padding: 10px;
+  /* z-index: -100; */
+  margin: 5px;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  width: 70%;
+}
+
+.reviewrow {
+  background: #cdd7de;
+  border: 1px solid #8F7BA9;
+  border-radius: 5px;
+  padding: 10px;
+  /* z-index: -100; */
+  margin: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.reviewitem {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
