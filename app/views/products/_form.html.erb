@@ -11,22 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="reviewrow">
+
+
+  <div class="reviewitem">
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="reviewitem">
+    <%= f.label :image_link %>
+    <%= f.text_field :image_link %>
+  </div>
+
+  <div class="reviewitem">
     <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
 
-  <div class="field">
+  <div class="reviewitem">
     <%= f.label :price_in_cents %>
     <%= f.number_field :price_in_cents %>
   </div>
 
-  <div class="actions">
+  <div class="actions">  <!-- add a button class -->
     <%= f.submit %>
   </div>
 <% end %>
+</div>
