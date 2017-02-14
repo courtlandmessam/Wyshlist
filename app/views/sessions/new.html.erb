@@ -1,0 +1,27 @@
+<div style="width:1000px; margin:0 auto; text-align: center; padding-top: 40px;">
+<h1 style="font-size: 80px;">Wyshlist</h1>
+<h3>"The official app for all of the requests of the C12 Cohort"</h3>
+<h4>"AKA Things Bianca Should Buy For Us"</h4>
+</div>
+
+<div style="width:200px; margin:0 auto; padding-top: 5px;">
+<%= form_tag '/login' do %>
+
+  <div style="width:100px; margin:0 auto; text-align: center;">
+    <h2 style="font-size: 35px;">Email</h2>
+  </div>
+
+  <%= text_field_tag :email %>
+
+  <div style="width:150px; margin:0 auto; text-align: center; padding-top: 30px;">
+  <h2 style="font-size: 35px;">Password</h2>
+  </div>
+
+  <%= password_field_tag :password %>
+
+<div style="width:100px; margin:0 auto; text-align: center; padding-top: 25px;">
+  <%= submit_tag "Submit" %>
+</div>
+
+<% end %>
+</div>

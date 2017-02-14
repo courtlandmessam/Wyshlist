@@ -1,3 +1,33 @@
 // Place all the styles related to the reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.reviewrow {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    /* z-index: -100; */
+    margin: 0 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.reviewitem {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+}
+
+.newhtml {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    /* z-index: -100; */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}

@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: Lato;
+  color: white;
+}
 
 
 .bigrow {
@@ -14,8 +18,8 @@ flex-direction: column;
 }
 
 .prodrow {
-  background: #cdd7de;
-  border: 1px solid #8F7BA9;
+  background: #transparent;
+  border: none;
   border-radius: 5px;
   padding: 10px;
   /* z-index: -100; */
@@ -23,7 +27,7 @@ flex-direction: column;
   display: flex;
   float: left;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
 }
 
 .prodname {
@@ -31,7 +35,7 @@ position: relative;
 display:inline-block;
 float: left;
 padding: 10px;
-width: 15%;
+width: 18%;
 
 }
 
@@ -39,9 +43,9 @@ width: 15%;
 position: relative;
 display:inline-block;
 float: left;
-border-radius: 10px;
+border-radius: 100px;
 overflow: hidden;
-border: solid 1px #E6E8FA;
+border: none;
 
 
 }
@@ -68,7 +72,7 @@ width: 10%;
 position:relative;
 display:inline-block;
 float: left;
-padding: 10px;
+// padding: 10px;
 border: 0px solid;
 }
 
@@ -116,13 +120,40 @@ padding: 10px;
 input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
     align-items: flex-start;
     text-align: center;
+    font-family: Lato;
     cursor: default;
-    color: buttontext;
-    background-color: buttonface;
+    color: white;
+    background-color: black;
     box-sizing: border-box;
-    padding: 2px 6px 3px;
-    border-width: 2px;
-    border-style: double;
+    padding: 8px 10px 8px 10px;
+    border-width: 10px;
+    border-style: none;
     border-color: buttonface;
-    border-image: initial;
+    // border-image: initial;
+}
+
+input[type=text] {
+    border: none;
+    background-color: white;
+    width: 100%;
+    height: 30px;
+}
+
+input[type=text]:focus {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+}
+
+input[type=password] {
+    border: none;
+    background-color: white;
+    width: 100%;
+    height: 30px;
+}
+
+input[type=password]:focus {
+    background-color: white;
+    width: 100%;
+    height: 30px;
 }

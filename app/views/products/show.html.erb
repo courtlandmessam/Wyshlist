@@ -15,21 +15,21 @@
   <%= @product.formatted_price %>
 </p>
 
-<h3>Reviews</h3>
+<h3>Wynthoughts</h3>
 
 <div class="bigrow">
 <% @product.reviews.each do |review| %>
   <div class="proddetails">
     <div class="reviewrow">
      <div class="reviewitem"><%= review.comment %></div>
-     <div class="reviewitem"><font color="gray"><em>Added on <%= time_ago_in_words review.created_at %> ago</em></font></div>
+     <div class="reviewitem"><font color="white"><em>Added on <%= time_ago_in_words review.created_at %> ago</em></font></div>
     </div>
   </div>
 <% end %>
 </div>
 
 
-<h3>New Review</h3>
+<h3>New Wynthought</h3>
 <%= render 'reviews/form', review: @review %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
