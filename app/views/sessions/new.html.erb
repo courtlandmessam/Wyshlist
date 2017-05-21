@@ -1,27 +1,34 @@
-<div style="width:1000px; margin:0 auto; text-align: center; padding-top: 40px;">
-<h1 style="font-size: 80px;">Wyshlist</h1>
-<h3>"The official app for all of the requests of the C12 Cohort"</h3>
-<h4>"AKA Things Bianca Should Buy For Us"</h4>
-</div>
+<div class="container ">
+    <div class="row">
+        <div class="col s12 m4 l2"></div>
+        <div class="col s12 m4 l8">
+            <h1 style="text-align: center">Wyshlist</h1>
+            <h5 style="text-align: center">"The official app for all of the requests of the C12 Cohort"</h5>
+            <h6 style="text-align: center; padding-bottom: 20px;">"AKA Things Bianca Should Buy For Us"</h6>
+        </div>
 
-<div style="width:200px; margin:0 auto; padding-top: 5px;">
-<%= form_tag '/login' do %>
+        <div style="width:400px; margin:0 auto; padding-top: 50px;">
+            <%= form_tag '/login' do %>
 
-  <div style="width:100px; margin:0 auto; text-align: center;">
-    <h2 style="font-size: 35px;">Email</h2>
-  </div>
+            <div style="width:100px; margin:0 auto; text-align: center;">
+                <h5>Email</h5>
+            </div>
 
-  <%= text_field_tag :email %>
+            <%= text_field_tag :email %>
 
-  <div style="width:150px; margin:0 auto; text-align: center; padding-top: 30px;">
-  <h2 style="font-size: 35px;">Password</h2>
-  </div>
+            <div style="width:150px; margin:0 auto; text-align: center;">
+                <h5>Password</h5>
+            </div>
 
-  <%= password_field_tag :password %>
+            <%= password_field_tag :password %>
 
-<div style="width:100px; margin:0 auto; text-align: center; padding-top: 25px;">
-  <%= submit_tag "Submit" %>
-</div>
-
-<% end %>
+            <div style="text-align: center;">
+                <button class="btn waves-effect waves-light" type="submit" name="action">
+                    <%= submit_tag "Submit" %>
+                </button>
+            </div>
+            <% end %>
+        </div>
+        <div class="col s12 m4 l2"></div>
+    </div>
 </div>

@@ -4,6 +4,10 @@
     <title>Wyshlist</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,7 +21,7 @@
     <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
   <% end %>
 
-  <body style="background-color: #27AE60">
+  <body style="background-color: #4DB6AC">
     <%= yield %>
   </body>
 </html>
