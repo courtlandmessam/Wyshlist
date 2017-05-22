@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Wyshlist</title>
-    <%= csrf_meta_tags %>
+    <head>
+        <title>Wyshlist</title>
+        <%= csrf_meta_tags %>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    </head>
 
+    <% if current_user %>
+    Signed in as
+    <%= current_user.name %>
+    <span class="waves-effect waves-light btn right">
+        <%= link_to "Logout", '/logout' %>
+    </span>
+<% else %>
+    <span class="waves-effect waves-light btn">
+        <%= link_to 'Login', '/login' %>
+    </span>
+    <span class="waves-effect waves-light btn right">
+        <%= link_to 'Signup', '/signup' %>
+    </span>
+    <% end %>
 
-
-  <% if current_user %>
-    Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-  <% else %>
-    <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-  <% end %>
-
-  <body style="background-color: #4DB6AC">
-    <%= yield %>
-  </body>
+    <body style="background-color: #4DB6AC">
+        <%= yield %>
+    </body>
 </html>

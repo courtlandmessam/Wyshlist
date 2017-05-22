@@ -1,11 +1,28 @@
-<h1>Signup!</h1>
+<h3>Signup!</h3>
 
 <%= form_for :user, url: '/users' do |f| %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+Name:
+<span style="color: black">
+    <%= f.text_field :name %>
+</span>
+Email:
+<span style="color: black">
+    <%= f.text_field :email %>
+</span>
+Password:
+<span style="color: black">
+    <%= f.password_field :password %>
+</span>
+Password Confirmation:
+<span style="color: black">
+    <%= f.password_field :password_confirmation %>
+</span>
+
+<div style="text-align: center;">
+    <button class="btn waves-effect waves-light" type="submit" name="action">
+        <%= f.submit "Submit" %>
+    </button>
+</div>
 
 <% end %>
