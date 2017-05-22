@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Wyshlist | Things Bianca Should Buy For Us</h1>
+<h4>Wyshlist | Let Your Wynthoughts Be Heard</h4>
 
 <table>
     <thead>
@@ -22,8 +22,8 @@
             <div class="prodimg"><%= mystring.html_safe %></div>
             <div class="prodname" style="text-align: center;">
                 <h3><%= product.name %></h3>
-  <p>Wynthoughts: <%= product.reviews.length%></p>
-
+                <p>Wynthoughts:
+                    <%= product.reviews.length%></p>
 
             </div>
 
@@ -48,5 +48,3 @@
 <!-- </table>  -->
 
 <br><br>
-
-<div class="prodnew"><%= link_to 'New Suggestion', new_product_path %></div>

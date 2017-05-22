@@ -16,8 +16,12 @@
     <% if current_user %>
     Signed in as
     <%= current_user.name %>
+
     <span class="waves-effect waves-light btn right">
         <%= link_to "Logout", '/logout' %>
+    </span>
+    <span class="waves-effect waves-light btn right" style="margin-right: 5px;">
+        <%= link_to 'New Wynggestion', new_product_path %>
     </span>
 <% else %>
     <span class="waves-effect waves-light btn">
